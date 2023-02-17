@@ -1,0 +1,30 @@
+//Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+$mainFont: 'Poppins', sans-serif;
+
+//Sizings 
+$textXl: 1.9em;
+$textLg: 1.2em;
+$textMd: 1.1em;
+$textSm: 0.9em;
+$textXs: 0.8em;
+
+//Weigths
+$textBold: 600;
+$textExtraBold:900;
+$textBoldXs:300;
+
+* {
+    font-family: $mainFont;
+    list-style: none;
+}
+
+h4 {
+    font-size: $textLg;
+    font-weight: $textBold;
+}
+
+h5 {
+    font-size: $textMd;
+}

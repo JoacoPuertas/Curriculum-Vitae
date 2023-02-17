@@ -1,0 +1,68 @@
+// MIXINS
+@mixin medidas($width, $height, $padd, $margin)
+{
+    width: $width;
+    height: $height;
+    padding: $padd;
+    margin: $margin;
+}
+
+@mixin box($border, $radius, $shadow, $outline)
+{
+    border: $border;
+    border-radius: $radius;
+    box-shadow: $shadow;
+    outline: $outline;
+}
+
+@mixin textos($size, $weight, $color)
+{
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
+@mixin reset($padding, $margin)
+{
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin flex($direction, $justify, $align)
+{
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//----GENERAL----//
+
+* {
+    @include reset(0, 0)
+}
+
+ul, li {
+    margin: 0px;
+    padding: 0px;
+}
+.perfil {
+    @include flex(column, space-between, center);
+    .info__1 {
+        @include flex(row, space-evenly, center);
+        div {
+            @include flex(column, center, center);
+            margin: 10px ;
+        }
+    }
+    .info__2 {
+        @include flex(row, space-evenly, center);
+        div {
+            @include flex(column, center, center);
+            margin: 10px ;
+        }
+    }
+
+
+}
+

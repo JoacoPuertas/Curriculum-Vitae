@@ -1,0 +1,26 @@
+// COLORES
+$paleta:(
+    'uno': rgb(46, 57, 45),
+    'dos': rgb(79, 80, 40),
+    'tres': rgb(41, 80, 40),
+    'cuatro': rgb(41, 117, 40),
+    'cinco': rgb(0, 175, 69),
+    'seis': rgb(74, 162, 79),
+    'siete': rgb(39, 176, 47),
+    'ocho': rgb(120, 218, 126),
+    'nueve': rgb(29, 99, 97),
+    'diez': rgb(3, 50, 49),
+);
+
+$blanco: #fff ;
+$negro: #000;
+$pictureColor: rgba(29, 99, 97, 0.6);
+
+header {
+    background-color: map-get($map: $paleta, $key:'nueve');
+};
+
+.perfil {
+    background-color: map-get($map: $paleta, $key:'diez');
+    color:$blanco;
+}
