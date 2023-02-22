@@ -39,7 +39,13 @@
 //----GENERAL----//
 
 * {
-    @include reset(0, 0)
+    @include reset(0, 0);
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul, li {
@@ -64,5 +70,19 @@ ul, li {
     }
 
 
+}
+
+.estudios {
+    @include flex(column,center ,center )
+}
+.estudios_btn {
+    @include box(none, 40px , 1px 1px 9px ,none );
+    @include reset(15px 32px,10px );
+}
+
+//FOOTER
+
+footer {
+    @include flex(row,center ,center )
 }
 

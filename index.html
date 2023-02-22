@@ -8,9 +8,10 @@
     <meta name="desciption" content="Unica pagina del Curriculum Vitae de Joaquin Roman Puertas">
     <title>My Curriculum Vitae</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!--Link Fonts-->
+    <link href='https://css.gg/instagram.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/9942da2001.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--Start Barra de Navegacion-->
@@ -26,16 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Perfil</a>
+                            <a class="nav-link " href="#perfil">Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Experiencia</a>
+                            <a class="nav-link " href="#experiencia">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " href="#">Estudios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#">Objetivos</a>
+                            <a class="nav-link " href="#estudios">Estudios</a>
                         </li>
                     </ul>
                 </div>
@@ -58,7 +56,7 @@
             </div>
             <div class="container">
                 <figure>
-                    <img src="images/perfil.jpg" alt="Foto de perfil">
+                    <img src="images/perfil-1.webp" alt="Foto de perfil">
                     <div class="redes">
                         <ul>
                             <li><a href="#">Instagram</a></li>
@@ -84,7 +82,8 @@
     <!--End Perfil-->
     <!--Start Experiencia-->
     <section id="experiencia">
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <h2 class="text-center my-4">Experiencia</h2>
+        <div class="accordion accordion-flush container my-2" id="accordionFlushExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -92,7 +91,7 @@
                     </button>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                    <div class="accordion-body"><p>Trabajé un año y medio como profesor de futbol de divisiones inferiores.</p></div>
                 </div>
             </div>
             <div class="accordion-item">
@@ -102,43 +101,58 @@
                     </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                    <div class="accordion-body"><p>Trabajé 5 meses como administrativo contable, usando Hollistor, Excel y Word.</p></div>
                 </div>
             </div>
             <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        Vendedor en Tienda de Ropa
+                        Modelo
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body"><p>Trabajé como modelo para las marcas Falabella y Ona Saez</p></div>
                 </div>
             </div>
         </div>
     </section>
     <!--End Experiencia-->
     <!--Start Estudios-->
-    <section id="estudios" class="estudios">
-        <ul>
-            <li>Colegio M. Moreno</li>
-            <li>UNSAM</li>
-            <li>CoderHouse</li>
-            <li>UNLP</li>
-        </ul>
-        <!-- Incluir Javascript-->
+    <section id="estudios" class="estudios p-2 p-md-5">
+        <button class="estudios_btn" id="ocultarTexto_btn">Estudios</button>
+        <span class="ocultar" id="ocultarTexto">
+            <p class=" text-center m-4">Mis estudios de primaria y secundaria estas hechos en la esccuela Mariano Moreno de Florentino Ameghino. En 2021 comence estudiando Ingenieria Biomedica en la Universidad de San Martin, dejé la carrera luego de 1 año y 5 meses. A mediados de 2022 realice el curso de Desarrollo web de CoderHouse y realicé mi primera <a href="https://csydsarmiento.netlify.app/" target="_blank">pagina web</a>, obteniendo asi mi certificado como desarrollador. Actualmente estudio la carrera de Diseño multimedial en la Universidad de La Plata. </p>
+        </span> 
+        <div class="my-2">
+            <ul>
+                <li>Email: joacopuertas3@gmail.com</li>
+                <li>TEl: +54 3388-531317</li>
+                <li>La Plata, Buenos Aires, Argentina</li>
+            </ul>
+        </div>
     </section>
     <!--End Estudios-->
-    <!--Start Contactos-->
-    <section id="objetivos">
-
-    </section>
-    <!--End Contacto-->
     <!--Start Footer-->
-    <footer>
-        
+    <footer class="p-5 footer">
+        <div class="footer_redes">
+            <ul class="social-icons">
+                <li>
+                    <a href="https://instagram.com/joacopuertas" target="_blank"><i class="fa fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/joaquinroman.puertas" target="_blank"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/PuertasJoaco" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/joaquin-puertas-3aa0a2239" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
     </footer>
     <!--End Footer-->
+    <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

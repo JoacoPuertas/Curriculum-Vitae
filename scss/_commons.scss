@@ -14,13 +14,47 @@ $paleta:(
 
 $blanco: #fff ;
 $negro: #000;
+$gris: #aaa;
+$ocho: rgb(120, 218, 126);
+$siete:rgb(39, 176, 47);
+$seis: rgb(74, 162, 79);
 $pictureColor: rgba(29, 99, 97, 0.6);
+
+//HEADER//
 
 header {
     background-color: map-get($map: $paleta, $key:'nueve');
 };
 
+//PERFIL//
+
 .perfil {
     background-color: map-get($map: $paleta, $key:'diez');
     color:$blanco;
+    a {
+        color: $blanco ;
+        &:hover {
+            color:map-get($map: $paleta, $key:'ocho' ) ;
+        }
+    }
 }
+//EXPERIENCIA
+
+//ESTUDIOS
+#estudios {
+    background-color: map-get($map: $paleta, $key:'nueve' );
+    a {
+        color: map-get($map: $paleta, $key:'ocho' );
+        &:hover {
+            color: map-get($map: $paleta, $key:'siete' );
+        }
+    }
+}
+.estudios_btn {
+    background-color: map-get($map: $paleta, $key:'cinco' );
+    &:hover {
+        background-color: map-get($map: $paleta, $key:'cuatro' );
+    }
+}
+
+//FOOTER
